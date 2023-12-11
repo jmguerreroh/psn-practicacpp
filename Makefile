@@ -1,7 +1,6 @@
 # Standard programs to be used: compiler and its options
 CC = g++
 CFLAGS = -ggdb -Wall
-LIBS = `pkg-config opencv4 --cflags --libs`
 
 # File directory
 DIR = ./project_cpp/
