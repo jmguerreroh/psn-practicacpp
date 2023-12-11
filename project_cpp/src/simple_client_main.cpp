@@ -34,7 +34,7 @@ int main ( int argc, char *argv[] )
 			std::cout << "TOKENIZE --> Data: " ;
 			// *** NEW: for auto 
 			for (auto &d: vdata) {
-				std::cout << d << " - " ;
+				std::cout << "[" << d << "]" ;
 			}
 			std::cout << std::endl;
 		}

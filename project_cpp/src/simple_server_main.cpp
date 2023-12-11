@@ -21,7 +21,7 @@ int main ( int argc, char *argv[] )
 			Utils utils;
 			ServerSocket new_sock;
 			server.accept ( new_sock );
-			std::cout << "Conection accepted" << std::endl;
+			std::cout << "Connection accepted" << std::endl;
 			try
 			{
 				while ( true )
@@ -38,7 +38,7 @@ int main ( int argc, char *argv[] )
 					std::cout << "TOKENIZE --> Data: " ;
 					// *** NEW: for auto 
 					for (auto &d: vdata) {
-						std::cout << d << " - " ;
+						std::cout << "[" << d << "]" ;
 					}
 					std::cout << std::endl;
 
@@ -48,7 +48,7 @@ int main ( int argc, char *argv[] )
 				}
 			}
 			catch ( SocketException& ) {}
-			std::cout << "Conection closed" << std::endl;
+			std::cout << "Connection closed" << std::endl;
 		}
 	}
 	catch ( SocketException& e )
